@@ -1,0 +1,9 @@
+name: Github simple-slack-notify demo
+on: [push]
+jobs:
+    call-simple-slack-notify-from-pvmtriet232-repo:
+        runs-on: ubuntu-latest
+        steps: 
+            - uses: edge/simple-slack-notify@master
+              with:
+                text: 'This is the simplest notification'
