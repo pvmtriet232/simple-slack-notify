@@ -5,5 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             - uses: edge/simple-slack-notify@master
+              env:
+                SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
               with:
                 text: 'This is the simplest notification'
